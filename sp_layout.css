@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: Yves M. Ramos
+   Date:   9/9/2018
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+html {
+	height: 100%;
+}
+
+body {
+	width: 95%;
+	max-width: 960px;
+	min-width: 640px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+header, ul, nav, li, a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Row Styles */
+.row {
+	clear: both;
+}
+
+.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+/* Page Header Styles */
+header > img {
+	display: block;
+	width: 70%;
+	float: left;
+}
+
+header nav {
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 30%;
+}
+
+header > nav > ul > li > a {
+	display: block;
+	width: 100%;
+}
+
+
+/* Horizontal Navigation List Styles */
+nav.horizontal > ul > li {
+	display: block;
+	width: 12.5%;
+	float: left;
+}
+
+
+/* Topics Styles */
+ul#topics > li {
+	display: block;
+	width: 20%;
+	float: left;
+	margin-left: 0;
+	margin-right: 1.5%;
+}
+
+ul#topics > li:first-child {
+	margin-left: 7.75%;
+}
+
+ul#topics > li:last-child {
+	margin-right: 7.75%;
+}
+
+ul#topics > li > img {
+	display: block;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* HR Styles */
+hr {
+	width: 50%;
+}
+
+
+/* Customer Comment Styles */
+ul#comments {
+	width: 75%;
+	margin: 40px auto;
+}
+
+ul#comments > li {
+	display: block;
+	width: 50%;
+	float: left;
+	margin-bottom: 30px;
+}
+
+ul#comments > li > img {
+	display: block;
+	width: 20%;
+	float: left;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+ul#comments > li > p {
+	float: left;
+	width: 70%;
+}
+
+
+/* Footer Styles */
+footer {
+	clear: both;
+}
+
